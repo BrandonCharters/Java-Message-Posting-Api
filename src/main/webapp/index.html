@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Message Posts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Message Post Tester</h1>
+
+<section>
+    <h2>Create Post</h2>
+    <input id="createEmail" placeholder="Your email" />
+    <input id="createSubject" placeholder="Subject" />
+    <textarea id="createBody" placeholder="Body"></textarea>
+    <button onclick="createPost()">Post</button>
+</section>
+
+<section>
+    <h2>All Posts</h2>
+    <button onclick="getAllPosts()">Show all posts</button>
+    <div id="allPosts"></div>
+</section>
+
+<section>
+    <h2>Get Post by ID</h2>
+    <input id="getId" placeholder="Post ID" />
+    <button onclick="getPostById()">Get</button>
+    <pre id="singlePost"></pre>
+</section>
+
+<section>
+    <h2>Update Post</h2>
+    <input id="updateId" placeholder="Post ID" />
+    <input id="updateEmail" placeholder="Your email (must match original)" />
+    <input id="updateSubject" placeholder="New subject" />
+    <textarea id="updateBody" placeholder="New body"></textarea>
+    <button onclick="updatePost()">Update</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

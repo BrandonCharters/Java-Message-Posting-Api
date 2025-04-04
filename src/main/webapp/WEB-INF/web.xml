@@ -1,0 +1,11 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         version="3.1">
+    <servlet>
+        <servlet-name>PostEndpoints</servlet-name>
+        <servlet-class>org.messagepostapi.endpoints.PostEndpoints</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostEndpoints</servlet-name>
+        <url-pattern>/posts</url-pattern>
+    </servlet-mapping>
+</web-app>
